@@ -68,3 +68,11 @@ function dec2hex(d) {
     }
     return hex;
 }
+
+(function() {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'icon';
+    link.href = 'https://preview.ibb.co/fn9Oic/LOGO.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+})();
