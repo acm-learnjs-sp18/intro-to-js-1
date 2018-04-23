@@ -44,13 +44,13 @@ function time2color(dateFormat, hours, minutes, seconds) {
     for (var i=0; i < dateFormat.length; i++) {
         switch(dateFormat[i]) {
             case 'h':
-                result.push(dec2hex(parseInt((hours / 24) * 255)));
+                result.push(dec2hex((hours / 24) * 255));
                 break;
             case 'm':
-                result.push(dec2hex(parseInt((minutes / 60) * 255)));
+                result.push(dec2hex((minutes / 60) * 255));
                 break;
             case 's':
-                result.push(dec2hex(parseInt((seconds / 60) * 255)));
+                result.push(dec2hex((seconds / 60) * 255));
                 break;
         }
     };
@@ -60,6 +60,7 @@ function time2color(dateFormat, hours, minutes, seconds) {
 /****** BOILERPLATE CODE *****************************************************/
 
 function dec2hex(d) {
+    d = parseInt(d);
     var hex = Number(d).toString(16);
     padding = typeof(padding) === "undefined" || padding === null ? padding = 2 : padding;
     while (hex.length < padding) {
