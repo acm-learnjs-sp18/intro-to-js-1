@@ -96,7 +96,7 @@ arr; // ["Learn.js", 425, true]
 
 
 
-###Type Coercion: Friend or Foe?
+### Type Coercion: Friend or Foe?
 
 - in statically-typed languages (C, C++, Java), you must make coercion explicit and you call it “casting”
 - in dynamically-typed languages (i.e. JavaScript), you can cast but you can also do implicit coercion
