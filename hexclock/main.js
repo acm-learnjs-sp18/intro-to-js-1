@@ -13,7 +13,7 @@ function updateClock() {
 
     var color = time2color(dateFormat, hours, minutes, seconds);
 
-    if (hours > 12) {
+    if (hours >= 12) {
         ampm = "PM";
     } else {
         ampm = "AM";
@@ -26,7 +26,11 @@ function updateClock() {
         minutes = "0" + minutes;
     }
 
-    time.innerHTML = hours%12 + ":" + minutes + ":" + seconds + " " + ampm;
+    if (hours != 12) {
+        hours %= 12;
+    }
+
+    time.innerHTML = hours + ":" + minutes + ":" + seconds + " " + ampm;
 
     hex.innerHTML = "#" + color;
 
