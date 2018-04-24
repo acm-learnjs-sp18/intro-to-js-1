@@ -1,6 +1,6 @@
-let time = document.getElementById("clock");
-let hex = document.getElementById("hex");
-let body = document.getElementById("body");
+var time = document.getElementById("clock");
+var hex = document.getElementById("hex");
+var body = document.getElementById("body");
 
 function updateClock() {
     var date = new Date();
