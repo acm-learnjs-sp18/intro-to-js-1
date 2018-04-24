@@ -1,4 +1,12 @@
-# Session 1
+# Getting Started with JavaScript
+
+## Developer Environment
+
+For the presentation we'll be using the Google Chrome console because it shows a lot of useful information compared to other online JS consoles, however, there are a few others that offer the ability to save and debug and prettify your code that you should take a look at!
+
+- https://codepen.io/
+- https://jsbin.com/
+- https://jsfiddle.net/
 
 ## Types
 
