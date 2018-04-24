@@ -221,7 +221,11 @@ if (x < 8) {
 
 ### While Loops
 
-```
+A **loop** allows you to repeatedly execute a bit of code, usually until you want to stop executing. If you don't stop somewhere, you'll create an infinite loop!
+
+The simplest kind of loop is a `while` loop, which is a loop declared with the keyword `while` followed by some sort of condition. Let's take a look at an example:
+
+```javascript
 var x = 0;
 while (x < 5) {
     x++;
@@ -241,5 +245,23 @@ x is 5
 
 And then terminate as x will no longer be less than 5.
 
+So, what's going on here is we declare a variable `x` to be equal to 0. And then our `while` loop is saying "as long as x is less than 5, execute this `console.log` statement to print `x`". Note that we increment `x` inside the `while` loop to avoid an infinite loop. If we didn't have that `x++` x would always remain 0 and the loop would never terminate! We would just an endless stream of "x is 0" from the `console.log` statement.
+
 ### For Loops
 
+`For` loops are a slightly more sophisticated way of declaring loops, but in my experience they're also a bit more common than `while` loops, just because they're a bit cleaner in how they express the loop conditions. I'll show you what I mean
+
+```javascript
+for (var x = 1; x <= 5; x++) {
+    console.log("x is " + x);
+}
+```
+
+So, some things to note here:
+
+- We declare `x` *alongside* the loop as opposed to outside (although you can also declare `x` outside if you wish)
+- Our `x++` term is also *alongside* the loop. The fact that our assignment of `x` and incrementing `x` are dealt with as soon as we declare the loop is what I meant earlier about being "cleaner."
+
+You may have also noticed that the conditions of the `for` loop are different than the `while` loop (if you didn't, just notice above that we initialize `x` to 1 instead of 0 and run the loop as long as `x` is <= 5, rather than just < 5). Why?
+
+Well, the way the `while` loop above works is we chose to increment `x` **before** the `console.log` statement. However, `for` loops work by executing the incrementing condition (`x++`) **after** the stuff inside the loop (i.e. the `console.log` statements).
