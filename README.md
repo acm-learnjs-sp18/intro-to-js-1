@@ -1,5 +1,9 @@
 # Session 1: Intro to JavaScript
 
+## Essential Links
+
+Slides: https://docs.google.com/presentation/d/1ZrlPQ-0upTmmmD2WzSceB5_SFaGU4HHrbmDjnMRRAa0/edit?usp=sharing
+
 ## The Code
 
 1. Start by going into the `main.js` file in the `starter` folder. This is where we'll be doing all our coding. The `final` folder is just so you can compare and troubleshoot later!
@@ -142,4 +146,3 @@
     ```
 
 20. And there you have it! Your hex clock is finished!
-
