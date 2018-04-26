@@ -1,4 +1,34 @@
+var time = document.getElementById("clock");
+var hex = document.getElementById("hex");
+var body = document.getElementById("body");
 
+function updateClock() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    var ampm = "";
+
+    if (hours >= 12) {
+        ampm = "PM";
+    } else {
+        ampm = "AM";
+    }
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    if (hours != 12) {
+        hours %= 12;
+    }
+
+    time.innerHTML = hours + ":" + minutes + ":" + seconds + " " + ampm;
+    
+};
 
 /****** BOILERPLATE CODE *****************************************************/
 

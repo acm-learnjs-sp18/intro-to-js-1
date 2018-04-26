@@ -10,7 +10,6 @@ function updateClock() {
     var ampm = "";
 
     var dateFormat = ['h', 'm', 's'];
-
     var color = time2color(dateFormat, hours, minutes, seconds);
 
     if (hours >= 12) {
@@ -42,16 +41,12 @@ setInterval(updateClock, 1000);
 function time2color(dateFormat, hours, minutes, seconds) {
     var result = [];
     for (var i=0; i < dateFormat.length; i++) {
-        switch(dateFormat[i]) {
-            case 'h':
-                result.push(dec2hex(hours / 24));
-                break;
-            case 'm':
-                result.push(dec2hex(minutes / 60));
-                break;
-            case 's':
-                result.push(dec2hex(seconds / 60));
-                break;
+        if (dateFormat[i] === 'h') {
+            result.push(dec2hex(hours / 24));
+        } else if (dateFormat[i] === 'm') {
+            result.push(dec2hex(minutes / 60));
+        } else if (dateFormat[i] === 's') {
+            result.push(dec2hex(seconds / 60));
         }
     };
     return result.join('');
