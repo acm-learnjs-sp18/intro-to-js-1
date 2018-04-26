@@ -4,7 +4,7 @@
 
 1. Start by going into the `main.js` file in the `starter` folder. This is where we'll be doing all our coding. The `final` folder is just so you can compare and troubleshoot later!
 
-   ![Screen Shot 2018-04-25 at 4.40.15 PM](/Users/dustinnewman/Desktop/Screen Shot 2018-04-25 at 4.40.15 PM.png)
+   ![img](https://lh4.googleusercontent.com/2w8N1cr1kVfyQbWbxBVJV5PQAcYVyO_U8qw5HuZkuP-w98FFS4NSYojzJcd0PJlg-9lBEYAtdHx71FQi4OZMOV1yHATP_QC6MXQcHfPKASD2vpUpDexXAHy13__WFcS2-CPCudko)
 
 2. Everything we'll be coding will go above the comment titled "BOILERPLATE CODE". Don't worry if you don't understand it! Boilerplate code is ready out of the box!
 
@@ -20,7 +20,7 @@
 
    Think of `document` as one big object that represents the entire HTML page and `getElementById` is just a property of this object. Remember to put this **above** the boilerplate marker.
 
-   ![Screen Shot 2018-04-25 at 4.52.23 PM](/Users/dustinnewman/Desktop/Screen Shot 2018-04-25 at 4.52.23 PM.png)
+   ![img](https://lh6.googleusercontent.com/YREbj5gtQDg-fPsXGroloEC-_U03PC8ThHA_1j2GLfAwn6ftfaWaAXohByuf0tGouUrAPena2-BpkyfGreTCGgMcn0SxyDcgfDQsk-SLuV_q_h851ysfuHKFyMCgwJx8wd8ZSdEJ)
 
 5. Go ahead and declare a function called `updateClock()` that takes no parameters.
 
@@ -28,7 +28,7 @@
 
    So far, everything above the boilerplate should look like this:
 
-   ![Screen Shot 2018-04-25 at 4.55.22 PM](/Users/dustinnewman/Desktop/Screen Shot 2018-04-25 at 4.55.22 PM.png)
+   ![img](https://lh4.googleusercontent.com/lnJO0h0Lk49bCNGtjYni3xCpTBQSDWx2IOXkDyEMOQarzXYDPXuPMrGQ4nAN2vW9QZwNqvAZIF3BnTOdBRYBL6NDcDoJ006Gv0Yp94AUZDMmxST6zw2Eje7ZlA8GTHoy6wiGLTmi)
 
 7. Now we're going to use ourly newly created `date` object and access some very useful properties it has! Namely, the hours, minutes, and seconds!
 
@@ -48,19 +48,19 @@
 
 10. Now, time for our first use of these variables! If you are using 12-hour time, then you'll need an if-statement that accounts for that! Go ahead and enter this into your code:
 
-    ```javascript
-    if (hours >= 12) {
-        ampm = "PM";
-    } else {
-        ampm = "AM";
-    }
-    ```
+   ```javascript
+   if (hours >= 12) {
+       ampm = "PM";
+   } else {
+       ampm = "AM";
+   }
+   ```
 
-    What this does is, if the `hours` variable we got from our `Date` object is greater than or equal to 12, we're going to say that it is PM. And if it's not PM, then it must be AM!
+   What this does is, if the `hours` variable we got from our `Date` object is greater than or equal to 12, we're going to say that it is PM. And if it's not PM, then it must be AM!
 
-    So, at this point your code should look like this:
+   So, at this point your code should look like this:
 
-    ![Screen Shot 2018-04-25 at 5.06.41 PM](/Users/dustinnewman/Desktop/Screen Shot 2018-04-25 at 5.06.41 PM.png)
+   ![img](https://lh6.googleusercontent.com/wmeKNkUZmxdSOj7G2Po2UGOOV-2AOtn8jxTC5lsv9wGUs2r-1FzDXh13xk3UBgHb4lHDtnc7oHeU6x-BrRE2UDvTJd-Hxpn1QpxV0SFgfYHjXO38EUNZDtzo-SPAxZnrHJrUIs1I)
 
 11. Now some more formatting things to take care of! Most clocks put a "0" in front of the minute or second if it's less than 10 (i.e. it's "5:09:09 PM" not "5:9:9 PM"). So, to account for this, we're going to insert the following code:
 
@@ -85,7 +85,7 @@
 
 13. Code check-in! All of your code should look like this by now:
 
-    ![Screen Shot 2018-04-25 at 5.18.40 PM](/Users/dustinnewman/Desktop/Screen Shot 2018-04-25 at 5.18.40 PM.png)
+    ![img](https://lh3.googleusercontent.com/Aw9PxZfhAzTHm8eHjstQLDWDQ5vVCJDdCBT_OKvTFlLMx8E2SmjoFqW14238rpNVANHpvjdM9ppaOBz4Rf8nLsJrAFEgUfOioCuuMhRkM3eYXUyMre_9z4ULWJuvJGlA5W5WejWN)
 
 14. Alright, now time to finally change something on our page! We're going to do this with the `innerHTML` property of the `time` variable we declared a ways back.
 
@@ -124,7 +124,7 @@
 
     Your code should look like this by now:
 
-    ![Screen Shot 2018-04-25 at 5.24.34 PM](/Users/dustinnewman/Desktop/Screen Shot 2018-04-25 at 5.24.34 PM.png)
+    ![img](https://lh6.googleusercontent.com/VsgBM9lSdbTMZk0XqmVtIigOWqLL3liqsUBxDOjfNT7ZVEyVfVS5W39R2acHGkujL3Kf3GxfxvcO62vnyXWooKz0ssw1QP4u2VuUojDWoSbOr6VnZ12QMHJnQ4URgU4Wa95UwLUh)
 
 18. Now, we're going to finish this off by finally using that `color` variable we declared earlier. Put the following snippet at the **bottom** of your `updateClock` function:
 
@@ -142,3 +142,4 @@
     ```
 
 20. And there you have it! Your hex clock is finished!
+
