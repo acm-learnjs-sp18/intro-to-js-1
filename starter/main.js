@@ -10,7 +10,7 @@ function dec2hex(d) {
     // Multiply d by 255
     d = parseInt(d * 255);
     // Convert d from a Number to a String
-    var hex = Number(d).toString(16);
+    var hex = d.toString(16);
 
     // If hex is less than two digits, pad it with zeros ("0") until it is.
     padding = typeof(padding) === "undefined" || padding === null ? padding = 2 : padding;
